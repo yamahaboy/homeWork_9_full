@@ -1,5 +1,5 @@
 .axit-main-block {
-  max-width: 1170px;
+  max-width: 100%;
   height: auto;
   margin: 0 auto;
   position: relative;
@@ -8,24 +8,29 @@
   border: 1px solid #c6cbcd;
   border-top: none;
   border-bottom: none;
-  
+}
+.axit-logo {
+  width: 300px;
+  height: 100px;
+  margin-bottom: 50px;
+  margin-left: -1%;
 }
 
-.axit-main-block{
-    background-image: url("../svg/axit-back.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+.axit-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.axit-main-block {
+  background-image: url("../svg/axit-back.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .axit-main-content {
   display: flex;
   flex-direction: column;
-  margin: 12%;
-}
-
-.containet-logo-form {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 70px;
+  margin: 10%;
+  margin-top: 12%;
 }
 
 .axit-page-text {
@@ -33,23 +38,23 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 48px;
   line-height: 56px;
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: black;
 }
 
 .axit-page-text::after {
   content: "";
   position: absolute;
   top: 63%;
-  left: 19.5%;
+  left: 16.5%;
   transform: translateX(-50%);
   width: 170px;
   height: 1px;
-  background-color: #ec7979;
+  background-color: #ffffff;
 }
 
 .axit-footer-text {
@@ -66,6 +71,7 @@
 
 .Btn-download {
   position: relative;
+  align-items: center;
   justify-content: center;
   text-align: center;
   display: flex;
@@ -81,7 +87,7 @@
   border: 2px solid #fff;
   background-color: rgba(255, 255, 255, 0);
   width: 30%;
-  height: auto;
+  height: 60px;
 }
 
 .form-header {
@@ -111,7 +117,7 @@
   height: 450px;
   background-color: #ffffff;
   border-radius: 10px;
-  left: 55%;
+  left: 60%;
 }
 
 .form-header {
@@ -140,6 +146,7 @@
   position: absolute;
   bottom: 0;
   background-color: #ec7979;
+  border: none;
   border-radius: 0px 0px 10px 10px;
 }
 
@@ -177,4 +184,103 @@
   display: flex;
   align-items: center;
   color: #bdbdbd;
+}
+
+#media-axit {
+  display: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .axit-form {
+    margin-right: 20px;
+    width: 400px;
+  }
+  .form-header {
+    display: flex;
+    width: 300px;
+    white-space: nowrap;
+    margin-left: 50px;
+  }
+  .form-axit-content {
+    width: 300px;
+  }
+  .form-axit-btn {
+    width: 400px;
+  }
+  .axit-page-text {
+    font-size: 36px;
+  }
+  #media-axit {
+    display: block;
+  }
+  #desktop-br {
+    display: none;
+  }
+  .axit-footer-text {
+    font-size: 16px;
+  }
+  .axit-page-text::after {
+    left: 19%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .axit-form {
+    width: 350px;
+  }
+  .form-header {
+    display: flex;
+    width: 230px;
+    white-space: nowrap;
+    margin-left: 50px;
+    font-size: 20px;
+  }
+  .form-axit-btn {
+    width: 350px;
+  }
+  .axit-logo {
+    width: 200px;
+  }
+  .axit-page-text {
+    font-size: 32px;
+  }
+  .axit-footer-text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .axit-form {
+    width: 300px;
+  }
+  .form-header {
+    display: flex;
+    width: 230px;
+    white-space: nowrap;
+    margin-left: 30px;
+    font-size: 18px;
+  }
+  .form-axit-btn {
+    width: 300px;
+  }
+  .axit-page-text {
+    font-size: 32px;
+  }
+  .axit-footer-text {
+    font-size: 16px;
+  }
+  .form-axit-content {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .axit-logo {
+    display: none;
+  }
+  .form-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
