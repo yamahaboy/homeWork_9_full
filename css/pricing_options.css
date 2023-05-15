@@ -1,0 +1,136 @@
+.main-pricing-options{
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    border: 1px solid #C6CBCD;
+    border-top: none ;
+    border-bottom: none ;
+    background-color: #F5F5F5;
+}
+
+
+.pricing-options-header{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin-top: 110px;
+    margin-bottom: 110px;
+    text-transform: uppercase;
+    font-family: 'Raleway',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.pricing-options-header::after {
+    content: "";
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 170px;
+    height: 1px;
+    background-color: #EC7979;
+  }
+
+.pricing-options-text{
+    color:#86878B;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Raleway',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    margin-bottom: 110px;
+}
+
+.main-pricing-options-content{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.table-pricing-options{
+    width: 30%;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.table-header-option{
+    height: 60px;
+    background: #333333;
+    border: 1px solid #F5F5F5;
+    
+}
+
+#table-header-text{
+    color: #fff;
+    font-family: 'Open Sans',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.table-price{
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background: #333333;
+    border: 1px solid #F5F5F5;
+}
+
+#table-header-price{
+    color: #fff;
+    font-family: 'Raleway',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.table-life-dates{
+    height: 50px;
+    background: #333333;
+    border: 1px solid #86878B;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Raleway',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.table-row-space{
+    background: #fff;
+    color: #86878B;
+    border-bottom: 1px solid #e2e2e6;
+    font-family: 'Raleway',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+
+.upper-table{
+    margin-top: -30px;
+    box-shadow: 0px 0px 10px grey;
+}
+
+
+
+
