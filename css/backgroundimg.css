@@ -79,3 +79,31 @@
     width:370px;
     height:60px;
 }
+#for-lower-background{
+    display: none;
+}
+
+@media (max-width: 1024px){
+    .lower-background-img-header{
+        font-size: 24px;
+    }
+    .lower-background-text{
+        font-size: 14px;
+    }
+    .lower-background-img-header::after{
+        width: 140px;
+    }
+    .lower_btn{
+        width:320px;
+    }
+}
+@media (max-width: 400px){
+    
+    #for-lower-background{
+        display: block;
+    }
+    .lower_btn{
+        width:290px;
+    } 
+}
+

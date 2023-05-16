@@ -9,7 +9,7 @@
     height: auto;
 }
 
-.main-tab-block::after {
+/* .main-tab-block::after {
     content: "";
     display: block;
     border-bottom: 1px solid #C6CBCD;
@@ -22,7 +22,7 @@
     border-image: url(border.png) 0 0 0 50 stretch;
     border-image-slice: 1;
     height: 5px;
-}
+} */
 
 .tab-block{
     width: 50%;
@@ -57,8 +57,18 @@
     height: auto;
   }
 
+  @media (max-width: 1200px) {
+    .tab-block{
+        width: 500px;
+    }
+  }
   @media (max-width: 600px) {
     .tab-block{
-        width: 100%;
+        width: 400px;
+    }
+  }
+  @media (max-width: 00px) {
+    .tab-block{
+        width: 200px;
     }
   }
