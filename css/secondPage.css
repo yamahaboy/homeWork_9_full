@@ -1,7 +1,13 @@
 .second-block {
-    padding-top: 200px;
+    margin-top: 50px;
+    max-width: 100%;
     display: flex;
-    
+    justify-content: center;
+  }
+
+  .second-page{
+    display: flex;
+    flex-direction: column;
   }
 .second-page-header-main{
     position: relative;

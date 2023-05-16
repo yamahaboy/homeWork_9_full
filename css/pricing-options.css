@@ -1,13 +1,10 @@
 .main-pricing-options{
-    max-width: 1170px;
+    max-width: 100%;
     margin: 0 auto;
     position: relative;
     display: flex;
     flex-direction: column;
     height: auto;
-    border: 1px solid #C6CBCD;
-    border-top: none ;
-    border-bottom: none ;
     background-color: #F5F5F5;
 }
 
@@ -60,14 +57,18 @@
 }
 
 .table-pricing-options{
-    width: 30%;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    height: 510px;
     text-align: center;
     justify-content: center;
     
 }
 
 .table-header-option{
+    display: flex;
+    justify-content: center;
     height: 60px;
     background: #333333;
     border: 1px solid #F5F5F5;
@@ -86,6 +87,7 @@
 }
 
 .table-price{
+    display: flex;
     align-items: center;
     justify-content: center;
     height: 100px;
@@ -103,6 +105,9 @@
 }
 
 .table-life-dates{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 50px;
     background: #333333;
     border: 1px solid #86878B;
@@ -115,6 +120,9 @@
 }
 
 .table-row-space{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #fff;
     color: #86878B;
     border-bottom: 1px solid #e2e2e6;
@@ -123,6 +131,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+    height: 50px;
 }
 
 

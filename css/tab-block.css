@@ -25,7 +25,7 @@
 }
 
 .tab-block{
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: row;
     font-size: 20px;
@@ -55,4 +55,10 @@
   .tab-without-border {
     width: 160px;
     height: auto;
+  }
+
+  @media (max-width: 600px) {
+    .tab-block{
+        width: 100%;
+    }
   }

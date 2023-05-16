@@ -1,5 +1,5 @@
 .footer-block{
-    max-width: 1170px;
+    max-width: 100%;
     height: auto;
     margin: 0 auto;
     position: relative;
@@ -43,3 +43,39 @@
     line-height: 21px;
     color: rgba(255, 255, 255, 0.5);
 }
+
+@media (max-width: 1250px) {
+    .footer-icon{
+        width: 35px;
+        height: 35px;
+    }
+    .footer-text{
+        font-size: 16px;
+    }
+  }
+
+
+  @media (max-width: 1024px) {
+    .footer-text{
+        font-size: 14px;
+        line-height: 16px;
+    }
+  }
+
+
+  @media (max-width: 600px) {
+    .footer-icon{
+        width: 30px;
+        height: 30px;
+    }
+    .footer-content-icon-block{
+        justify-content: space-between;
+    }
+  }
+
+  @media (max-width: 530px) {
+    .footer-icon{
+        width: 25px;
+        height: 25px;
+    }
+  }

@@ -1,13 +1,10 @@
 .contact-us-main-block {
-  max-width: 1170px;
+  max-width: 100%;
   height: auto;
   margin: 0 auto;
   position: relative;
   display: flex;
   flex-direction: column;
-  border: 1px solid #c6cbcd;
-  border-top: none;
-  border-bottom: none;
 }
 
 .contact-us-header {
