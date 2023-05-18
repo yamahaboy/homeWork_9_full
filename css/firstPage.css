@@ -6,6 +6,7 @@
   height: 100%;
   margin: 0 auto;
 }
+
 .tab-block{
   width: calc(100%/3);
   text-align: center;
