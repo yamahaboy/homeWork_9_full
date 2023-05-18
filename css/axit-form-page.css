@@ -1,33 +1,54 @@
+.html,
+.body{
+  margin: 0;
+  padding: 0;
+}
+
 .axit-main-block {
   max-width: 100%;
   height: auto;
-  margin: 0 auto;
-  position: relative;
+  padding: 50px;
   display: flex;
-  flex-direction: row;
+  
 }
-.axit-logo {
-  width: 300px;
-  height: 100px;
-  margin-bottom: 50px;
-  margin-left: -1%;
-}
-
-.axit-logo img {
-  width: 100%;
-  height: 100%;
-}
-
 .axit-main-block {
-  background-image: url("../svg/axit-back.svg");
+  background:url("../svg/axit-back.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .axit-main-content {
   display: flex;
-  flex-direction: row;
-  margin: 10%;
-  margin-top: 12%;
+  justify-content: space-between;
+  width: 100%;
+  height:100%;
+  margin-top: 5%;
+  margin: 50px 15px 50px 0;
+}
+
+.axit-info-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px 30px 30px 30px;
+}
+
+.axit-logo {
+  display: flex;
+  margin-bottom: 50px;
+  transform: translate(50px, 30px);
+}
+
+.axit-logo img {
+  transform: scale(1.5)
+}
+.axit-text-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  max-width: 670px;
+  margin: auto 0;
 }
 
 .axit-page-text {
@@ -37,17 +58,14 @@
   font-weight: 500;
   font-size: 48px;
   line-height: 56px;
-  display: flex;
-  align-items: center;
   text-transform: uppercase;
-  color: black;
+  color: #fff;
 }
-
 .axit-page-text::after {
   content: "";
   position: absolute;
-  top: 63%;
-  left: 16.5%;
+  top: 58%;
+  left: 9%;
   transform: translateX(-50%);
   width: 170px;
   height: 1px;
@@ -65,7 +83,6 @@
   align-items: center;
   color: #ffffff;
 }
-
 .Btn-download {
   position: relative;
   align-items: center;
@@ -79,58 +96,54 @@
   line-height: 25px;
   color: #fff;
 }
-
 .Btn-download {
   border: 2px solid #fff;
+  color: #fff;
   background-color: rgba(255, 255, 255, 0);
-  width: 30%;
+  width: 270px;
   height: 60px;
 }
-
-.form-header {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 33px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  color: #333333;
-  margin-bottom: 20px;
-}
-
-.form-header-color-change {
-  color: #ec7979;
-  padding: 0 6px;
-}
-
-.axit-form {
-  position: absolute;
+.form-axit{
   display: flex;
   flex-direction: column;
   max-width: 470px;
   height: 450px;
   background-color: #ffffff;
   border-radius: 10px;
-  left: 60%;
+  text-align: center;
+  align-self: flex-start;
+  justify-content: space-between;
+  margin-top: 60px;
 }
-
+.form-axit-content{
+  display: flex;
+  flex-direction: column;
+}
 .form-header {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  text-align: center;
   justify-content: center;
-  width: 470px;
-  height: 90px;
+  text-transform: uppercase;
+  color: #333333;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  margin-top: 20px;
+  
+}
+.form-header span {
+  color: #ec7979;
+  padding: 0 6px;
 }
 .form-axit-content {
   display: flex;
   flex-direction: column;
-  margin: auto;
-  width: 370px;
+  gap: 25px;
+  padding: 0 50px;
 }
-
 .form-axit-button {
   display: flex;
   flex-direction: row;
@@ -140,7 +153,6 @@
 .form-axit-btn {
   width: 470px;
   height: 60px;
-  position: absolute;
   bottom: 0;
   background-color: #ec7979;
   border: none;
@@ -160,19 +172,19 @@
   color: #ffffff;
 }
 
-.form1 input[type="text"],
-.form1 input[type="email"],
-.form1 input[type="password"] {
+.form-axit-content input[type="text"],
+.form-axit-content input[type="email"],
+.form-axit-content input[type="password"] {
   background-color: none;
   border: none;
   border-bottom: 1px solid #bdbdbd;
-  margin-bottom: 50px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
 }
 
-.form1 input[type="text"],
-.form1 input[type="email"],
-.form1 input[type="password"] {
+.form-axit-content input[type="text"],
+.form-axit-content input[type="email"],
+.form-axit-content input[type="password"] {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
@@ -182,102 +194,177 @@
   align-items: center;
   color: #bdbdbd;
 }
-
-#media-axit {
-  display: none;
-}
-
-.axit-container {
-  display: flex;
-  flex-direction: column;
-}
-
-@media screen and (max-width: 1300px) {
-  .axit-form {
-    margin-right: 20px;
-    width: 400px;
+@media screen and (max-width: 1170px){
+  .axit-main-content{
+    margin: 50px;
   }
-  .form-header {
-    display: flex;
-    width: 300px;
-    white-space: nowrap;
-    margin-left: 50px;
-  }
-  .form-axit-content {
-    width: 300px;
-  }
-  .form-axit-btn {
-    width: 400px;
-  }
-  .axit-page-text {
+  .axit-page-text{
     font-size: 36px;
+    line-height: 42px;
   }
-  #media-axit {
-    display: block;
-  }
-  #desktop-br {
-    display: none;
-  }
-  .axit-footer-text {
-    font-size: 16px;
-  }
-  .axit-page-text::after {
-    left: 19%;
+  .axit-footer-text{
+    font-size: 14px;
+    line-height: 20px;
   }
   .Btn-download{
-    width: 180px;
-  }
-}
-
-@media screen and (max-width: 1050px) {
-  .axit-form {
-    width: 350px;
-  }
-  .form-header {
-    display: flex;
-    width: 230px;
-    white-space: nowrap;
-    margin-left: 50px;
-    font-size: 20px;
-  }
-  .form-axit-btn {
-    width: 350px;
-  }
-  .axit-logo {
     width: 200px;
   }
-  .axit-page-text {
-    font-size: 32px;
+  .form-axit{
+    width: 400px;
   }
-  .axit-footer-text {
+  .axit-page-text::after{
+    top:53%;
+    left :18%;
+  }
+}
+
+@media screen and (max-width: 930px){
+  .axit-logo{
+    display: none;
+  }
+  .axit-main-content{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+  }
+  .axit-info-container{
+    justify-content: center;
+    align-items: center;
+  }
+  .axit-text-block{
+    text-align: center;
+    align-items: center;
+  }
+  .form-axit{
+    margin: auto;
+    width: 100%;
+    margin-top: 60px;
+  }
+  .axit-footer-text{
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .Btn-download{
+    width: 300px;
+  }
+  .axit-page-text::after{
+    top:37%;
+    left :50%;
+  }
+}
+@media screen and (max-width: 615px){
+  .axit-logo{
+    display: none;
+  }
+  .axit-main-content{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .axit-info-container{
+    justify-content: center;
+    align-items: center;
+  }
+  .axit-page-text{
+    font-size: 36px;
+    text-align: center;
+  }
+  .axit-footer-text{
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .axit-page-text::after{
+    top:45%;
+    left :50%;
+  }
+  .form-axit{
+    margin: auto;
+    width: 300px;
+    margin-top: 60px;
+  }
+  .form-header{
     font-size: 16px;
   }
 }
 
-@media screen and (max-width: 930px) {
-  .axit-form {
+@media screen and (max-width: 500px){
+  .axit-logo{
+    display: none;
+  }
+  .axit-main-content{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+  }
+  .axit-info-container{
+    justify-content: center;
+    align-items: center;
+  }
+  .axit-page-text{
+    font-size: 36px;
+    text-align: center;
+  }
+  .axit-footer-text{
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .axit-page-text::after{
+    top:40%;
+    left :50%;
+  }
+  .form-axit{
+    margin: auto;
     width: 300px;
+    margin-top: 60px;
   }
-  .form-header {
-    display: flex;
-    width: 230px;
-    white-space: nowrap;
-    margin-left: 30px;
-    font-size: 18px;
-  }
-  .form-axit-btn {
-    width: 300px;
-  }
-  .axit-page-text {
-    font-size: 32px;
-  }
-  .axit-footer-text {
+  .form-header{
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .axit-logo{
+    display: none;
+  }
+  .axit-main-content{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+    gap: 0;
+  }
+  .axit-info-container{
+    justify-content: center;
+    align-items: center;
+  }
+  .axit-page-text{
+    font-size: 36px;
+    text-align: center;
+  }
+  .axit-footer-text{
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .axit-page-text::after{
+    top:40%;
+    left :50%;
+  }
+  .form-axit{
+    margin:  0 auto;
+    width: 100%;
+    height: 400px;
+    margin-top: 60px;
+  }
+  .form-header{
+    font-size: 14px;
   }
   .form-axit-content {
-    width: 250px;
+    gap: 5px;
+    padding: 15px;
   }
 }
 
-@media (max-width: 830px) {
-}
+
